@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+<style>
+    body{
+        background:#041C32;
+    }
+</style> 
+<div class="container">
+
+Hey welcome to my index page
+
+
+
+{% comment %} this is the feedback section {% endcomment %}
+<div class="container pr-3 ">
+<h3 class="text-light mu-23">Leave any Message</h3>
+<form method="post" action="/">
+{% csrf_token %}
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-light ">Full name</label>
+    <input type="text" class="form-control" name="name" aria-describedby="basic-addon1">
+  </div>
+<div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label text-light ">Email address (For reply and further contact)</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+  </div>
+  <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label text-light ">Any Message / suggestions</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
+  </div>
+  <button class="btn btn-outline-secondary" type="submit">Send :)</button>
+</form>
+</div>
+</div>
+
+
+
+{% endblock body %}
