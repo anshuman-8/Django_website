@@ -1,7 +1,7 @@
 from re import M
 from django.contrib import admin
-from Home.models import Message
+from Home.models import Feedbacks
 
 # Register your models here.
 
-admin.site.register(Message)
+admin.site.register(Feedbacks)

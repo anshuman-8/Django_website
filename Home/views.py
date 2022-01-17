@@ -1,6 +1,6 @@
 from email import message
 from django.shortcuts import render,HttpResponse
-from Home.models import Message
+from Home.models import Feedbacks
 from django.contrib import messages
 
 
@@ -15,7 +15,7 @@ def index(request):
         name=request.POST.get('name')
         email=request.POST.get('email')
         message=request.POST.get('message')
-        full_message=Message(name=name,email=email,message=message)
+        full_message=Feedbacks(name=name,email=email,message=message)
         full_message.save()
         messages.success(request, 'Thank You !!!.')
 

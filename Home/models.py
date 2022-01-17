@@ -4,7 +4,7 @@ from django.db import models
 
 # Create your models here.
 
-class Message(models.Model):
+class Feedbacks(models.Model):
     name = models.CharField(max_length=34)
     email = models.EmailField( max_length=45)
     message = models.TextField()
