@@ -9,5 +9,5 @@ class Feedbacks(models.Model):
     email = models.EmailField( max_length=45)
     message = models.TextField()
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.name

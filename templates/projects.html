@@ -2,4 +2,29 @@
 
 {% block title %}Home{% endblock title %}
 
-{% block body %}Hey welcome to my project page{% endblock body %}
+{% block body %}
+<style>
+    body{
+        background:#041C32;
+    }
+</style>
+
+
+<div class='container'>
+    <section class="py-4 text-center container">
+        <div class="row py-lg-3">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-dark text-light">My Projects</h1>
+            <p class="lead text-muted">Still working</p>
+            {% comment %} <p>
+              <a href="#" class="btn btn-primary my-2">Main call to action</a>
+              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            </p> {% endcomment %}
+          </div>
+        </div>
+      </section>
+</div>
+
+
+Hey welcome to my project page
+{% endblock body %}
