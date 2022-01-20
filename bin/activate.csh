@@ -8,7 +8,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/home/anshuman/Desktop/Anshuman/Projects/website/project/personal_site"
+setenv VIRTUAL_ENV "/home/anshuman/Desktop/Anshuman/Personal Website/anshuman-8.github.io"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
@@ -17,8 +17,8 @@ setenv PATH "$VIRTUAL_ENV/bin:$PATH"
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
-    if ("personal_site" != "") then
-        set env_name = "personal_site"
+    if ("anshuman-8.github.io" != "") then
+        set env_name = "anshuman-8.github.io"
     else
         if (`basename "VIRTUAL_ENV"` == "__") then
             # special case for Aspen magic directories

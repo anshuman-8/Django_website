@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/anshuman/Desktop/Anshuman/Projects/website/project/personal_site"
+set -gx VIRTUAL_ENV "/home/anshuman/Desktop/Anshuman/Personal Website/anshuman-8.github.io"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
@@ -52,8 +52,8 @@ if test -z "$VIRTUAL_ENV_DISABLE_PROMPT"
         set -l old_status $status
 
         # Prompt override?
-        if test -n "(personal_site) "
-            printf "%s%s" "(personal_site) " (set_color normal)
+        if test -n "(anshuman-8.github.io) "
+            printf "%s%s" "(anshuman-8.github.io) " (set_color normal)
         else
             # ...Otherwise, prepend env
             set -l _checkbase (basename "$VIRTUAL_ENV")
