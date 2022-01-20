@@ -8,8 +8,8 @@
       background:#041C32;
   }
   .px-2 {
-    padding-left: ($spacer * .5) !important;
-    padding-right: ($spacer * .5) !important;
+    padding-left: ($spacer * .5) ;
+    padding-right: ($spacer * .5) ;
   }
 </style>
 
@@ -17,14 +17,14 @@
 
 Hey welcome to my index page
 <div class="container pr-3 mb-5">
-  <h2 class='ml-5 text-light'>Hello, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px"></h2>
+  <h2 class='ml-5 text-light'>Hey, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px"> </h2>
 
   <section class="bg-transparent">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
             <div class="col-12 col-lg-5">
                 <h2 class="display-4 lh-1 mb-4 text-light">Anshuman Swain</h2>
-                <p class="mb-1 text-light"><a href="https://github.com/anshuman-8">GitHub</a> | <a href="https://twitter.com/Anshuman_8_">Twitter</a> | <a href="https://www.linkedin.com/in/anshuman-swain-1529b2219/">LinkedIn</a></p>
+                <p class="mb-1 text-light h5"><a href="https://github.com/anshuman-8">GitHub</a> | <a href="https://twitter.com/Anshuman_8_">Twitter</a> | <a href="https://www.linkedin.com/in/anshuman-swain-1529b2219/">LinkedIn</a></p>
                 <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10"></p>
                 <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10">Gets Sh!t Done</p>
                 <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10"></p>
@@ -42,10 +42,16 @@ Hey welcome to my index page
   <div class="list-group text-light mb-6">
     
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1"> hello Company</h5>
+        <h5 class="mb-1"> </h5>
       </div>
-      <p class="mb-1"> s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</p>
-      <small>12/01/2022</small>
+      <div>
+      <p class="mb-2">Student at Amrita Vishwa Vidyapeetham, Amritapuri</p>
+      <p>Course: Bachelor's in Computer Science & Artificial Intelligence</p>
+      <p>Member at <a href="https://amfoss.in/">amFOSS</a></p>
+      </div>
+      <h5 class="mb-1">Skills </h5>
+      <p class="h6" style="text-indent :2em;"> <tab>Django, Python, Java(+Object orented Programming)</p>
+      <small></small>
     
 </div>
 
@@ -54,11 +60,11 @@ Hey welcome to my index page
   <div class="list-group">
     <a href="#" class="list-group-item list-group-item-action mb-2">
       <div class="d-flex w-100 justify-content-between">
-        <h5 class="mb-1"> hello Company
+        <h5 class="mb-1"> ---
         </h5>
       </div>
-      <p class="mb-1"> {% lorem 3 b random %}</p>
-      <small>12/01/2022</small>
+      <p class="mb-1"> None</p>
+      <small>18/01/2022</small>
     </a> 
     {% comment %} <a href="#" class="list-group-item list-group-item-action mb-2">
       <div class="d-flex w-100 justify-content-between">
@@ -76,8 +82,8 @@ Hey welcome to my index page
 <h3 class="text-light mu-23">Leave any Message</h3>
 <form method="post" action="/">
 {% csrf_token %}
-<div class="row">
-<div class="mb-3">
+<div class="row ">
+<div class="mb-3 pr-5">
     <label for="name" class="form-label text-light ">Full name</label>
     <input type="text" class="form-control" name="name" aria-describedby="basic-addon1">
   </div>
