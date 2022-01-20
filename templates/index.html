@@ -7,35 +7,100 @@
   body{
       background:#041C32;
   }
+  .px-2 {
+    padding-left: ($spacer * .5) !important;
+    padding-right: ($spacer * .5) !important;
+  }
 </style>
+
 <div class="container">
 
 Hey welcome to my index page
-<div class="container pr-3 mb-8">
-  <h2 class='mr-10 text-light'>Hello, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px"></h2>
-  <h3 class='text-light'>I am Anshuman Swain</h3>
+<div class="container pr-3 mb-5">
+  <h2 class='ml-5 text-light'>Hello, <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px"></h2>
+
+  <section class="bg-transparent">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-12 col-lg-5">
+                <h2 class="display-4 lh-1 mb-4 text-light">Anshuman Swain</h2>
+                <p class="mb-1 text-light"><a href="https://github.com/anshuman-8">GitHub</a> | <a href="https://twitter.com/Anshuman_8_">Twitter</a> | <a href="https://www.linkedin.com/in/anshuman-swain-1529b2219/">LinkedIn</a></p>
+                <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10"></p>
+                <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10">Gets Sh!t Done</p>
+                <p class="lead fw-normal text-muted mb-5 mb-lg-0 p-10"></p>
+            </div>
+            <div class="col-sm-8 col-md-6">
+                <div class="px-8 px-sm-0"><img class="img-fluid rounded-circle" src="static/assets/big-dp.jpg" alt="..."></div>
+            </div>
+        </div>
+    </div>
+</section>
 </div>
 
+<div>
+  <h3 class="text-light  mb-3">About Me</h3>
+  <div class="list-group text-light mb-6">
+    
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1"> hello Company</h5>
+      </div>
+      <p class="mb-1"> s simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</p>
+      <small>12/01/2022</small>
+    
+</div>
+
+<div class="container my-5">
+  <h3 class="text-light  mb-3">Experience</h3>
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action mb-2">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1"> hello Company
+        </h5>
+      </div>
+      <p class="mb-1"> {% lorem 3 b random %}</p>
+      <small>12/01/2022</small>
+    </a> 
+    {% comment %} <a href="#" class="list-group-item list-group-item-action mb-2">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">List group item heading</h5>
+        <small>3 days ago</small>
+      </div>
+      <p class="mb-1">Some placeholder content in a paragraph.</p>
+      <small>And some small print.</small>
+    </a>  {% endcomment %}
+  </div>
+</div>
 
 {% comment %} this is the feedback section {% endcomment %}
-<div class="container pr-3 ">
+<div class="container px-5 mt-12 ">
 <h3 class="text-light mu-23">Leave any Message</h3>
 <form method="post" action="/">
 {% csrf_token %}
+<div class="row">
 <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label text-light ">Full name</label>
+    <label for="name" class="form-label text-light ">Full name</label>
     <input type="text" class="form-control" name="name" aria-describedby="basic-addon1">
   </div>
 <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label text-light ">Email address (For reply and further contact)</label>
+    <label for="email" class="form-label text-light ">Email address (For reply and further contact)</label>
     <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+  </div>
   </div>
   <div class="mb-3">
     <label for="exampleFormControlTextarea1" class="form-label text-light ">Any Message / suggestions</label>
     <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="3"></textarea>
   </div>
-  <button class="btn btn-outline-secondary" type="submit">Send :)</button>
+  <button class="btn btn-outline-secondary" type="submit" value="Submit">Send :)</button>
 </form>
+</div>
+
+<div class="container mt-5">
+  <footer class="blog-footer text-light">
+    <p class="text-center">Personal website using <a href="https://getbootstrap.com/">Bootstrap</a> and <a href="https://www.djangoproject.com/">Django</a>.</p>
+    <p class="text-center">
+      <a href="/">Back to top</a>
+    </p>
+  </footer>
 </div>
 </div>
 
